@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Mar 11 14:30:51 2020
+| Date         : Wed Mar 11 15:03:49 2020
 | Host         : LAPTOP-DR5BCRPM running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
 | Design       : top_level
@@ -52,10 +52,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              32 |           23 |
+| No           | No                    | No                     |              32 |           28 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              43 |           14 |
-| Yes          | No                    | No                     |              46 |           17 |
+| No           | Yes                   | No                     |              43 |           13 |
+| Yes          | No                    | No                     |              46 |           20 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |             108 |           25 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -67,24 +67,24 @@ Table of Contents
 +----------------------------+-----------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
 |        Clock Signal        |                          Enable Signal                          |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
 +----------------------------+-----------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
-|  your_instance_name/CLK_50 |                                                                 | Inst_ov7670_controller/Inst_i2c_sender/sioc_i_1_n_0        |                1 |              1 |
 |  your_instance_name/CLK_25 |                                                                 | Inst_VGA/Hsync0                                            |                1 |              1 |
-|  ov7670_pclk_IBUF_BUFG     |                                                                 |                                                            |                1 |              2 |
+|  your_instance_name/CLK_50 |                                                                 | Inst_ov7670_controller/Inst_i2c_sender/sioc_i_1_n_0        |                1 |              1 |
+|  ov7670_pclk_IBUF_BUFG     |                                                                 |                                                            |                2 |              2 |
 |  your_instance_name/CLK_25 | Inst_VGA/eqOp                                                   |                                                            |                2 |              2 |
 |  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/line0                                       | Inst_ov7670_capture/latched_vsync                          |                1 |              4 |
 |  your_instance_name/CLK_50 |                                                                 |                                                            |                3 |              4 |
-|  ov7670_pclk_IBUF_BUFG     |                                                                 | Inst_ov7670_capture/href_last[6]_i_1_n_0                   |                2 |              7 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_ov7670_registers/busy_sr_reg[31][0] |                                                            |                3 |              8 |
+|  ov7670_pclk_IBUF_BUFG     |                                                                 | Inst_ov7670_capture/href_last[6]_i_1_n_0                   |                3 |              7 |
 |  your_instance_name/CLK_25 | Inst_VGA/eqOp                                                   | Inst_VGA/Vcnt                                              |                3 |              8 |
-| ~ov7670_pclk_IBUF_BUFG     |                                                                 |                                                            |                7 |             10 |
-|  your_instance_name/CLK_25 |                                                                 | Inst_VGA/eqOp                                              |                4 |             10 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                 | Inst_ov7670_controller/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                3 |             11 |
-|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/latched_href                                |                                                            |                8 |             15 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/E[0]                     | Inst_debounce/SR[0]                                        |                3 |             16 |
-|  your_instance_name/CLK_25 |                                                                 |                                                            |               12 |             16 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_ov7670_registers/busy_sr_reg[31][0] |                                                            |                2 |              8 |
+| ~ov7670_pclk_IBUF_BUFG     |                                                                 |                                                            |               10 |             10 |
+|  your_instance_name/CLK_25 |                                                                 | Inst_VGA/eqOp                                              |                2 |             10 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                 | Inst_ov7670_controller/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                2 |             11 |
+|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/latched_href                                |                                                            |               11 |             15 |
+|  your_instance_name/CLK_25 |                                                                 |                                                            |               13 |             16 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/E[0]                     | Inst_debounce/SR[0]                                        |                4 |             16 |
 |  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/wren                                        | Inst_ov7670_capture/latched_vsync                          |                5 |             19 |
 |  your_instance_name/CLK_25 | Inst_Address_Generator/val                                      | Inst_VGA/Vsync_reg_0                                       |                5 |             19 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                 |                                                            |                4 |             21 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                 |                                                            |                5 |             21 |
 |  your_instance_name/CLK_25 |                                                                 | Inst_debounce/clear                                        |                6 |             24 |
 |  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr[31]_i_1_n_0 |                5 |             31 |
 +----------------------------+-----------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+

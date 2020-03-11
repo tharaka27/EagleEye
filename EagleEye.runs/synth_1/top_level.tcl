@@ -54,6 +54,9 @@ set_property used_in_implementation false [get_files -all {{c:/Users/ASUS/Deskto
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc}}]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

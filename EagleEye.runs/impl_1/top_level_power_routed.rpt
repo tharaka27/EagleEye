@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Mar 11 14:31:29 2020
+| Date             : Wed Mar 11 15:04:22 2020
 | Host             : LAPTOP-DR5BCRPM running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 10.853       |
+| Total On-Chip Power (W)  | 0.190        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 10.692       |
-| Device Static (W)        | 0.161        |
+| Dynamic (W)              | 0.116        |
+| Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 30.7         |
-| Junction Temperature (C) | 79.3         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.613 |      848 |       --- |             --- |
-|   LUT as Logic |     0.517 |      348 |     20800 |            1.67 |
-|   CARRY4       |     0.035 |       21 |      8150 |            0.26 |
-|   Register     |     0.029 |      229 |     41600 |            0.55 |
-|   BUFG         |     0.023 |        4 |        32 |           12.50 |
-|   F7/F8 Muxes  |     0.009 |       36 |     32600 |            0.11 |
+| Clocks         |     0.001 |        6 |       --- |             --- |
+| Slice Logic    |    <0.001 |      845 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      348 |     20800 |            1.67 |
+|   CARRY4       |    <0.001 |       21 |      8150 |            0.26 |
+|   Register     |    <0.001 |      229 |     41600 |            0.55 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |    <0.001 |       36 |     32600 |            0.11 |
 |   Others       |     0.000 |      138 |       --- |             --- |
-| Signals        |     2.300 |      871 |       --- |             --- |
-| Block RAM      |     0.710 |     44.5 |        50 |           89.00 |
-| MMCM           |     3.450 |        1 |         5 |           20.00 |
-| I/O            |     3.619 |       35 |       106 |           33.02 |
-| Static Power   |     0.161 |          |           |                 |
-| Total          |    10.853 |          |           |                 |
+| Signals        |     0.001 |      868 |       --- |             --- |
+| Block RAM      |     0.003 |     44.5 |        50 |           89.00 |
+| MMCM           |     0.106 |        1 |         5 |           20.00 |
+| I/O            |     0.004 |       35 |       106 |           33.02 |
+| Static Power   |     0.074 |          |           |                 |
+| Total          |     0.190 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +75,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     3.729 |       3.648 |      0.081 |
-| Vccaux    |       1.800 |     2.208 |       2.187 |      0.020 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vccint    |       1.000 |     0.017 |       0.006 |      0.011 |
+| Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     1.692 |       1.691 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.068 |       0.063 |      0.006 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -127,9 +128,14 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------+--------+-----------------+
-| Clock | Domain | Constraint (ns) |
-+-------+--------+-----------------+
++-------------+-----------------------------+-----------------+
+| Clock       | Domain                      | Constraint (ns) |
++-------------+-----------------------------+-----------------+
+| clkfbout    | your_instance_name/clkfbout |            10.0 |
+| clkout0     | your_instance_name/clkout0  |            20.0 |
+| clkout1     | your_instance_name/clkout1  |            40.0 |
+| sys_clk_pin | clk100                      |            10.0 |
++-------------+-----------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -138,21 +144,14 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------------+-----------+
-| Name                      | Power (W) |
-+---------------------------+-----------+
-| top_level                 |    10.692 |
-|   Inst_Address_Generator  |     0.538 |
-|   Inst_VGA                |     0.175 |
-|   Inst_debounce           |     0.115 |
-|   Inst_frame_buffer       |     1.386 |
-|     U0                    |     1.386 |
-|       inst_blk_mem_gen    |     1.386 |
-|   Inst_ov7670_capture     |     0.985 |
-|   Inst_ov7670_controller  |     0.154 |
-|     Inst_i2c_sender       |     0.117 |
-|     Inst_ov7670_registers |     0.002 |
-|   your_instance_name      |     3.554 |
-+---------------------------+-----------+
++------------------------+-----------+
+| Name                   | Power (W) |
++------------------------+-----------+
+| top_level              |     0.116 |
+|   Inst_frame_buffer    |     0.003 |
+|     U0                 |     0.003 |
+|       inst_blk_mem_gen |     0.003 |
+|   your_instance_name   |     0.106 |
++------------------------+-----------+
 
 

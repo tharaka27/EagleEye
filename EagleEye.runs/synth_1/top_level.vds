@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Mar 11 14:28:07 2020
-# Process ID: 2896
+# Start of session at: Wed Mar 11 15:01:12 2020
+# Process ID: 3972
 # Current directory: C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1
 # Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/top_level.vds
@@ -22,9 +22,9 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15928 
+INFO: Helper process launched with PID 17992 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 394.297 ; gain = 100.793
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 394.121 ; gain = 101.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/top_level.vhd:29]
 INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/clocking.vhd:75' bound to instance 'your_instance_name' of component 'clocking' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/top_level.vhd:158]
@@ -102,9 +102,9 @@ INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/Users/ASUS/Deskto
 INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/ov7670_registers.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (5#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/ov7670_registers.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (6#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/ov7670_controller.vhd:17]
-INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-2896-LAPTOP-DR5BCRPM/realtime/frame_buffer_stub.v:6' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/top_level.vhd:208]
-INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-2896-LAPTOP-DR5BCRPM/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (7#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-2896-LAPTOP-DR5BCRPM/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-3972-LAPTOP-DR5BCRPM/realtime/frame_buffer_stub.v:6' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/top_level.vhd:208]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-3972-LAPTOP-DR5BCRPM/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (7#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-3972-LAPTOP-DR5BCRPM/realtime/frame_buffer_stub.v:6]
 INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/ov7670_capture.vhd:5' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/top_level.vhd:219]
 INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/ov7670_capture.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (8#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/ov7670_capture.vhd:17]
@@ -116,7 +116,7 @@ INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/Users/ASUS/Deskt
 INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (10#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/address_Generator.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'top_level' (11#1) [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/sources_1/new/top_level.vhd:29]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 450.949 ; gain = 157.445
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 450.055 ; gain = 157.617
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -129,10 +129,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 450.949 ; gain = 157.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 450.055 ; gain = 157.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 450.949 ; gain = 157.445
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 450.055 ; gain = 157.617
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -141,35 +141,43 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-2896-LAPTOP-DR5BCRPM/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Inst_frame_buffer'
-Finished Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-2896-LAPTOP-DR5BCRPM/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Inst_frame_buffer'
+Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-3972-LAPTOP-DR5BCRPM/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Inst_frame_buffer'
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/.Xil/Vivado-3972-LAPTOP-DR5BCRPM/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Inst_frame_buffer'
+Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'ov7670_pclk_IBUF'. [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc:97]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_level_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.srcs/constrs_1/imports/new/basys3_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/dont_touch.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.293 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 766.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 781.293 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUFG => IBUF: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 766.566 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 766.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.293 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 781.293 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 781.293 ; gain = 488.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 781.293 ; gain = 488.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for Inst_frame_buffer. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 781.293 ; gain = 488.855
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
@@ -191,7 +199,7 @@ INFO: [Synth 8-5544] ROM "line" won't be mapped to Block RAM because address siz
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'line_reg' using encoding 'one-hot' in module 'ov7670_capture'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 781.293 ; gain = 488.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,7 +333,7 @@ WARNING: [Synth 8-3917] design top_level has port ov7670_pwdn driven by constant
 WARNING: [Synth 8-3917] design top_level has port ov7670_reset driven by constant 1
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Inst_ov7670_controller/Inst_i2c_sender/data_sr_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:33 . Memory (MB): peak = 781.293 ; gain = 488.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -352,13 +360,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:41 . Memory (MB): peak = 781.293 ; gain = 488.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 766.578 ; gain = 473.074
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:41 . Memory (MB): peak = 794.980 ; gain = 502.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -371,7 +379,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6837] The timing for the instance Inst_ov7670_controller/Inst_ov7670_registers/sreg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -395,7 +403,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -408,7 +416,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -420,25 +428,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -489,28 +497,28 @@ Report Instance Areas:
 |9     |  your_instance_name      |clocking          |     5|
 +------+--------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 785.289 ; gain = 176.156
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 785.289 ; gain = 491.785
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 796.238 ; gain = 172.563
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 796.238 ; gain = 503.801
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.047 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 797.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUFG => IBUF: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-67 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+69 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 786.047 ; gain = 492.969
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 786.047 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:47 . Memory (MB): peak = 797.988 ; gain = 505.984
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 797.988 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/sem 5 project/EagleEye/EagleEye.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 11 14:28:56 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 11 15:02:07 2020...
